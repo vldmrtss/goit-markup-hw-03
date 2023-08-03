@@ -7,6 +7,10 @@
   --cornflowers: #e7e9fc;
   --white: #fff;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate);
@@ -14,17 +18,24 @@ body {
 
 /* --Header-- */
 .page-header {
-  border-bottom: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflowers);
   background: var(--white);
 }
 .header-wrapper {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--cornflower);
+  background: var(--white);
+  height: 72px;
+  align-items: center;
 }
 .header-wrapper > nav > menu {
   display: inline-flex;
   list-style-type: none;
   gap: 40px;
+}
+.header-wrapper > nav > a {
+  padding-right: 76px;
 }
 
 .container {
@@ -135,7 +146,6 @@ body {
 }
 .container > ul > li {
   display: flex;
-  max-width: 264px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -189,7 +199,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 32px;
-  margin: 0px;
+  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -272,6 +284,7 @@ body {
   flex-shrink: 0;
   border: 1px solid var(--cornflowers);
   background: var(--white);
+  overflow: hidden;
 }
 .portfolio-wrap > ul > li > figure > figcaption {
   display: flex;
