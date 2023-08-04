@@ -320,7 +320,6 @@ body {
 }
 .footer {
   background-color: var(--navyblue);
-  width: 1440px;
   height: 312px;
 }
 .footer-wrapper > p {
